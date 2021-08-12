@@ -29,6 +29,6 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: node index
-           env:
+      env:
           CI: true
           TEST: ${{ secrets.TEST }}
